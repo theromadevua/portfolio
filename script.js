@@ -7,6 +7,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
+
 const mobileMenu = document.querySelector('.mobile-menu');
 const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
 const mobileToggle = document.querySelector('.mobile-toggle');
@@ -44,36 +45,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// document.querySelector(".contact__form").addEventListener("submit", async function (event) {
-//     event.preventDefault();
-
-//     const formData = new FormData();
-//     formData.append("from", "");
-//     formData.append("to", ""); 
-//     formData.append("subject", document.getElementById("subject").value);
-//     formData.append("text", `Name: ${document.getElementById("name").value}
-// Email: ${document.getElementById("email").value}
-// Message: ${document.getElementById("message").value}`);
-
-//     try {
-//         const response = await fetch("", {
-//             method: "POST",
-//             headers: {
-//                 "Authorization": "Basic " + btoa("api:"),
-//             },
-//             body: formData
-//         });
-
-//         if (response.ok) {
-//             alert("Message sent successfully!");
-//         } else {
-//             alert("Error sending message. Please check API settings.");
-//         }
-//     } catch (error) {
-//         console.error("Error:", error);
-//         alert("Network error. Please try again later.");
-//     }
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".contact__form");
@@ -109,3 +80,39 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.style.opacity = "1";
+});
+
+
+// document.querySelector(".contact__form").addEventListener("submit", async function (event) {
+//     event.preventDefault();
+
+//     const formData = new FormData();
+//     formData.append("from", "");
+//     formData.append("to", ""); 
+//     formData.append("subject", document.getElementById("subject").value);
+//     formData.append("text", `Name: ${document.getElementById("name").value}
+// Email: ${document.getElementById("email").value}
+// Message: ${document.getElementById("message").value}`);
+
+//     try {
+//         const response = await fetch("", {
+//             method: "POST",
+//             headers: {
+//                 "Authorization": "Basic " + btoa("api:"),
+//             },
+//             body: formData
+//         });
+
+//         if (response.ok) {
+//             alert("Message sent successfully!");
+//         } else {
+//             alert("Error sending message. Please check API settings.");
+//         }
+//     } catch (error) {
+//         console.error("Error:", error);
+//         alert("Network error. Please try again later.");
+//     }
+// });
